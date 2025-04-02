@@ -1,0 +1,8 @@
+= Hallasenderos
+
+Debido a que link:https://paizo.com/[paizo] no ha sacado una versión oficial en español de la segunda edición remasterizada de Pathfinder entonces decidí sacar mi propia versión traducida y sintetizada.
+
+WARNING: Es *MI* interpretación de las reglas, además tiene ciertos detallitos _homebrew_ añadidos. #*NO ES LA VERSIÓN OFICIAL*#
+
+== ¿Por qué "Hallasenderos"?
+Pues simplemente es una traducción literal y la abreviación *HS* me gusta, nada más.

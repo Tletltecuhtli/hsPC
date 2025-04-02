@@ -1,0 +1,6 @@
+= Contramaestre
+
+Gamemaster (GM) -> Maestro del Juego, [.underline]#Contramaestre#, Director del juego, etc.
+
+== ¿Qué es un contramaestre?
+Para poder jugar todo juego de rol se necesita un voluntario que Es quien se encargaga de contar la historia y mantener control de los personajes extra del mundo tanto monstruos como pueblerinos y nobeza todo lo controla el contramaestre. Hay reglas especificas que debe respetar pero de momento no vamos a preocuparnos por nada de eso porque aquí solo vamos a centrarnos del lado opuesto que son personajes jugables
