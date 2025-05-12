@@ -1,0 +1,196 @@
+#+TITLE: Hallasenderos
+#+DESCRIPTION: Guía para el jugador
+#+auto_tangle: t
+#+STARTUP: showeverything
+
+Esta es la guía del jugador, esta escrita en AsciiDoc para hacer uso de la herramienta [[https://docs.antora.org/antora/latest/][antora]] para pubicarlo en pf2e.ale.lat y por otro lado para usar AsciiDoctor y publicarlo como libro usando la misma raíz, de momento lo único que me falta es ser bueno en adoc y hacer que emacs sea capaz de reconocer la escritura
+
+Para hacer uso de esta herramienta se ocupa un archivo en raíz que hay que ir mejorando porque aún no entiendo del todo bien de que va esto
+#+begin_src yml :tangle "antora.yml"
+name: core
+title: Player Core
+version: latest
+display_version: default
+asciidoc:
+    attributes:
+        source-language: asciidoc@
+        xrefstyle: short@
+nav:
+    - modules/ROOT/nav.adoc
+    - modules/gp/nav.adoc
+    - modules/char/nav.adoc
+#+end_src
+
+* ROOT
+#+begin_src adoc :tangle "modules/ROOT/nav.adoc" :mkdirp yes
+,* xref:index.adoc[]
+
+[]
+,* RPG
+,** xref:gameMaster.adoc[]
+,** xref:attributes.adoc[]
+,** xref:armorClass.adoc[]
+#+end_src
+Aquí inicia con una leve introducción a lo que es un juego de rol y los objetivos del juego
+** Introducción
+#+BEGIN_SRC adoc :tangle "modules/ROOT/pages/index.adoc" :mkdirp yes
+= Introducción
+
+*¡Aventureros, atención! Vamos a jugar Hallasenderos* +
+Imaginen que son parte de una película de fantasía medieval como _El Senor de los Anillos_ o _Calabozos y Dragones_ pero aquí *USTEDES* son los *Héroes*.
+
+== ¿Qué es Hallasenderos?
+Es un *Juego de mesa* donde se crean personajes únicos y viven aventuras épicas. Pero no es un juego de mesa normal, aquí el único límite es tu imaginación mientras que los dados (principalmente un #d20#) determinan lo que pasa.
+
+== ¿Cómo se juega?
+Vamos a adentrarnos más a detalle en el #próximo capítulo# pero a groso modo:
+
+=== Creas un personaje
+¿Quieres ser un bárbaro furioso?, ¿un hechizero que lanza bolas de fuego? o ¿un astuto ladrón?. ¡Todo es posible!
+
+Hallasenderos tiene una amplia gama de razas y clases para creación de personajes por lo que puedes ser lo que sea que te imagines. Y lo que es mejor, si nada se parece a lo que tú quieres no hay problema *podemos crearlo*. Solo tienes que indicarle a tu #contramaestre# precisamente que es lo que deseas y lo haremos posible.
+// de aquí pa abajo solo estan las ideas, falta detallar
+¿Sientes ansiedad por tantas opciones? No pasa nada, tenemos #personajes prefabricados# los cuales son ideales para jugadores novatos o experimentados que quieres probar algo nuevo
+
+=== Te adentras a un mundo de *Fantasía*
+El contramaestre es el encargado de guiar a los jugadores por el mundo.....
+
+=== Los dados marcan tu destino
+Vas a atacar a alguien o pretendes convencer a un ogro de ir a  rescatar a la princesa del castillo mas alto de la torre mas lejana. Tira un dado de veinte lados (d20) y al resultado le sumas tus habilidades. ¡Entre más alto, mejor!
+
+== ¿Por qué probar?
+
+Es cooperativo: todos nos divertimos juntos tabajando en equipo.
+
+No hay presiones, si empiezan a divagar, distraerse y perderse, ¡es parte de la diversión!
+
+Aprender sobre la marcha, que la cantidad de información no te abruma, solo necesitan ganas de pasarla bien
+#+END_SRC
+
+queda ver como será posible linkear a otros capítulos, de momento estan marcados entre #así# pero pues no sé si sea más viable más adelante
+** Contramaestre
+#+begin_src adoc :tangle "modules/ROOT/pages/gameMaster.adoc" :mkdirp yes
+= Contramaestre
+
+Gamemaster (GM) -> Maestro del Juego, [.underline]#Contramaestre#, Director del juego, etc.
+
+== ¿Qué es un contramaestre?
+En todo juego de rol se necesita un voluntario que es quien se encargaga de contar la historia y mantener control de los personajes extra del mundo tanto monstruos como pueblerinos y nobeza todo lo controla el contramaestre. Hay reglas especificas que debe respetar pero de momento no vamos a preocuparnos por nada de eso porque aquí solo vamos a centrarnos del lado opuesto que son personajes jugables
+#+end_src
+** Atributos
+#+begin_src adoc :tangle "modules/ROOT/pages/attributes.adoc" :mkdirp yes
+= Atributos: Attribute
+Toda criatura tiene seis atributos que lo caracterizan, estos son:
+
+ *F* uerza _Strength_
+ *D* estreza _Dexterity_
+ *R* esistencia _Constitution_
+ *I* nteligencia _Intelligence_
+ *S* abiduría _Wisdom_
+ *C* arísma _Charisma_
+
+[note]
+En la versión _remasterizada_ de Pathfinder se desecharón los valores del 1 al 20 en los atributos, dejando únicamente los modificadores; siendo *0* el valor por defecto y de ahí partiendo a +1, +2, -1, etc.
+#+end_src
+** Armor Class
+#+begin_src adoc :tangle "modules/ROOT/pages/armorClass.adoc" :mkdirp yes
+= Nivel de armadura: Armor Class (AC)
+
+Toda criatura en el juego tiene un valor de nivel de armadura. Éste valor determina que tan difícil es atacar a la criatura. Básicamente es el DC de la criatura en contra del ataque.
+#+end_src
+* Gameplay
+A ver que tal sale
+#+begin_src adoc :tangle "modules/gp/nav.adoc" :mkdirp yes
+,* Gaming
+,** xref:actions.adoc[]
+,*** xref:basicActions.adoc[]
+,**** xref:attack.adoc[]
+#+end_src
+** Acciones
+#+begin_src adoc :tangle "modules/gp/pages/actions.adoc" :mkdirp yes
+= Acciones
+
+== Acción
+Dinámica que puede llevar a cabo cualquier personaje durante su turno en un encuentro; o fuera de estos, en cualquier momento a criterio del #contramaestre#. En los encuentros, al inicio de su turno cada criatura obtiene *TRES* acciones más *UNA* reacción, no acumulables. Hay cuatro tipos de acciones:
+
+Acción sencilla:: Se completa en un tiempo muy corto. Son auto-contenidas, y sus efectos se manifiestan en el lapso de una sola acción.
+Actividad:: Normalmente toman más tiempo y requieren de múltiples acciones, las cuales se consumen sucesivamente y durante el mismo turno.
+Reacción:: Taiene <<Desencadenante, desencadenantes>>, los cuales deben cumplirse en orden de poder usar la reacción, ya sea tu turno o no. Fuera de encuentros, el uso de reacciones es más flexible y bajo el criterio del #contramaestre#.
+Acción libre:: Sin costo alguno que pueden tener, o no, <<Desencadenante, desencadenantes>>, en caso de no tener desencadenante la acción libre debe hacerse en tu turno y no puede ser empleada simultáneamente junto otra acción.
+
+[NOTE]
+.Simbología
+====
+◆   Acción sencilla +
+◆◆  Actividad de doble acción +
+◆◆◆ Actividad de triple acción +
+⤾   Reacción +
+◇   Acción libre
+====
+
+== Actividad
+Fuera de encuentros, las actividades pueden tomar minutos, horas o hasta incluso días. Éste tipo de actividades vienen indicadas con el #rasgo# pertinente para indicar que se les planea usar en esos modos. Por lo general puedes hacer otras cosas mientras mientras se lleva a cabo la actividad, siempre y cuando tenga sentido. Por ejemplo, si estas Reparando un accesorio puedes tomarte un descanso e ir a platicar a una taberna, pero no podrías Descifrar un códice al mismo tiempo.
+
+== Desencadenante
+Se pueden usar acciones con desencadenantes solo en respuesta a ciertos eventos los cuales vienen detallados en la descripción de estas. Cuando el desencadenante se cumple, y solo hasta que este se cumple, puedes elegir, o no, llevar a cabo la respuesta.
+
+=== Limitaciones
+Los desencadenantes listados en la descripción de una acción limitan cuándo puedes usar estos. Pero solo puedes usar *UNA* acción en respuesta a un determinado desencadenante. Por ejemplo, si tuvieras dos reacciones que como desencadenante menciona al inicio de tu turno puedes usar cualquiera de ellas, pero no ambas. Esta limitación esta basada en una por criatura no por desencadenante, es decir, múltiples criaturas pueden reaccionar a un mismo desencadenante.
+#+end_src
+*** Acciones básicas
+#+begin_src adoc :tangle "modules/gp/pages/basicActions.ador" :mkdirp yes
+= Acciones básicas
+
+Representan obras comunes que cualquier criatura es capaz de realizar.
+
+.Acciones básicas
+ Apoyar ⤾
+ Arrastrarse ◆
+ Atacar ◆
+ Buscar ◆
+ Indagar intenciones ◆
+ Interactuar ◆
+ Liberarse ◆
+ Paso con cautela ◆
+ Posponer ◇
+#+end_src
+**** Ataque
+#+begin_src adoc :tangle "modules/gp/pages/attack.adoc" :mkdirp yes
+= Ataque: Attack
+
+Cuando una criatura trata de dañar a otra, ya sea con un golpe o cualquier otro tipo de acción.
+#+end_src
+* Personaje
+#+begin_src adoc :tangle "modules/char/nav.adoc" :mkdirp yes
+,* xref:character.adoc[]
+,** xref:ancestries.adoc[]
+,** xref:classes.adoc []
+,** xref:backdrounds.adoc[]
+#+end_src
+** Personaje
+#+begin_src adoc :tangle "modules/char/pages/character.adoc" :mkdirp yes
+= Personaje: Character
+
+== Héroe: Player Character (PC)
+Éste es un personaje creado y controlado por el jugador.
+
+== Personaje no jugable: Nonplayer CHaracter (NPC)
+#+end_src
+*** Ascendencia
+#+begin_src adoc :tangle "modules/char/pages/ancestry.adoc" :mkdirp yes
+= Ascendencia: Ancestry _porque decir *raza* es racista_
+
+La ascendencia es el tipo de gente al que pertenece el personaje o la criatura. La ascendencia determina los valores iniciales de **golpes de vida**[HP], idiomas, sentidos y velocidad; además brinda ciertas características[feats] asociadas exclusivamente a su ascendencia.
+#+end_src
+*** Clase
+#+begin_src adoc :tangle "modules/char/pages/class.adoc" :mkdirp yes
+= Clase: Class
+
+La clase representa la especialidad del aventurero. Esta determina la mayoría de las
+#+end_src
+*** Bagaje
+#+begin_src adoc :tangle "modules/char/pages/background.adoc" :mkdirp yes
+= Bagaje: Background
+
+El bagaje representa las experiencias que ha vivído el personaje previamente, este le proporciona una característica y entrenamiento en una o más habilidades.
+#+end_src

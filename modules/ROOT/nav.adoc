@@ -2,5 +2,6 @@
 
 []
 * RPG
+** xref:gameMaster.adoc[]
 ** xref:attributes.adoc[]
 ** xref:armorClass.adoc[]

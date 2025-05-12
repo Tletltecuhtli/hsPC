@@ -5,7 +5,7 @@ Dinámica que puede llevar a cabo cualquier personaje durante su turno en un enc
 
 Acción sencilla:: Se completa en un tiempo muy corto. Son auto-contenidas, y sus efectos se manifiestan en el lapso de una sola acción.
 Actividad:: Normalmente toman más tiempo y requieren de múltiples acciones, las cuales se consumen sucesivamente y durante el mismo turno.
-Reacción:: Tiene <<Desencadenante, desencadenantes>>, los cuales deben cumplirse en orden de poder usar la reacción, ya sea tu turno o no. Fuera de encuentros, el uso de reacciones es más flexible y bajo el criterio del #contramaestre#.
+Reacción:: Taiene <<Desencadenante, desencadenantes>>, los cuales deben cumplirse en orden de poder usar la reacción, ya sea tu turno o no. Fuera de encuentros, el uso de reacciones es más flexible y bajo el criterio del #contramaestre#.
 Acción libre:: Sin costo alguno que pueden tener, o no, <<Desencadenante, desencadenantes>>, en caso de no tener desencadenante la acción libre debe hacerse en tu turno y no puede ser empleada simultáneamente junto otra acción.
 
 [NOTE]

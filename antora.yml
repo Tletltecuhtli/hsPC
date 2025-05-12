@@ -8,5 +8,5 @@ asciidoc:
         xrefstyle: short@
 nav:
     - modules/ROOT/nav.adoc
-    - modules/gameplay/nav.adoc
+    - modules/gp/nav.adoc
     - modules/char/nav.adoc
