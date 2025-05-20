@@ -1,0 +1,17 @@
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Agarrarse ⤾ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Caes de un borde o pasas a lado de uno mientras caes.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+No tienes las manos atadas ni estás neutralizado de alguna otra forma.+#
+
+4+a|Cuando caes de un borde o bien pasas a lado de uno mientras caes, puedes intentar [underline]#*Agarrarte*# para potencialmente detener tu caída. Debes tener éxito en un rolado de _Reflejos_. Si te agarras del borde, puedes después _Trepar_ utilizando _Atletismo_
+^a|[big]#✅# +
+[small green-background]#*Te agarras del borde, tengas o no una mano libre. Sigues sufriendo daño debido a la distancia caída hasta ese momento, pero tratas la caída como si fuera 6m menor.*#
+^a|[big]#🟩# +
+[small green]#Si tienes por lo menos una mano libre, te agarras del borde deteniendo tu caída. Si no tienes ninguna mano libre, continúas cayendo como si hubieras fallado.#
+^a|[big]#🟥# +
+[small red]#Sigues cayendo.#
+^a|[big]#🆑# +
+[small red-background]#*Te lastimas al tratar de agarrarte. Además del daño total por la distancia caída, le sumas 1d6 de daño _Contundente_*#
+|===

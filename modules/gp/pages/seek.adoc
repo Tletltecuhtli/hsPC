@@ -1,0 +1,11 @@
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Buscar ◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️️+*#
+
+4+a|Puedes examinar un área en busqueda de signos de criaturas u objetos. Podrías sufrir un penalizador si eligieras un área muy grande o que estuviera lejos. El #contramaestre# puede determinar si necesitas _Buscar_ como una actividad, lo que requiere más acciones o incluso minutos u horas si buscas en una zona particularmente atestada. Si buscas criaturas, haz un rolado de persepción y el #contramaestre# comparará el resultado con el _Sigilo_ de cualquier criatura no detectada o escondida en la zona; de igual manera la #dificultad# para detectar objetos. Una criatura a la que detectas podría permanecer escondida, en lugar de volverse observada si estás utilizando un sentido impreciso o si algún efecto (como por ejemplo la invisibilidad) evita que el sujeto sea observado.
+2+^a|[big]#✅# +
+[small green-background]#*Si estás buscando criaturas, cualquier criatura no detectada o escondida pasa a ser observada por ti. Si estabas buscando un objeto, averiguas su ubicación.*#
+2+^a|[big]#🟩# +
+[small green]#Si estabas buscando criaturas, cualquier criatura no detectada pasa a estar escondida de ti en lugar de no detectada, y cualquier criatura escondida pasa a ser observada por ti. Si estabas buscando un objeto obtienes una clara pista sobre su paradero.#
+|===

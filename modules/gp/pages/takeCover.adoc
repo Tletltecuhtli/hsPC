@@ -1,0 +1,7 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Cubrirse ◆ >|
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Te estas beneficiando de cobertura, posees un rasgo que te permita ponerte a cubierto o estás _desplomado_+#
+
+4+a|Te arrimas a una pared o te agachas tras un obstáculo para sacar partido de la _cobertura_. Si tendrías cobertura normal, en su lugar obtienes cobertura mayor, que proporciona un bonificador +4 por circunstancia a tu #protección#, a los rolados de salvación de _Reflejos_ contra efectos de área y a las pruebas de _Sigilo_ para evitar tu detección. Si tendrías cobertura menor, en su lugar obtienes los beneficios de una cobertura normal, es decir un bonificador de +2 por circunstancia. Esto dura hasta que te mueves de tu espacio actual, usas alguna acción de ataque, quedas inconciente o voluntariamente acabas con este efecto como acción libre.
+|===

@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Cautelar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener una velocidad de al menos 2m.+#
+
+4+a|Te mueves cuidadosamente máximo 1m. A diferencia de otros tipos de movimiento, dar un paso con cautela no desencadena reacciones, como por ejemplo ataques oportunos que son desencadenados por acciones de movimiento. Tambien proporciona una bonificación por situación al sufrir la activación de trampas. No puedes dar un paso cauteloso en terreno difícil.
+|===

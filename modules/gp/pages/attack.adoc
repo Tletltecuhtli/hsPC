@@ -1,3 +1,15 @@
-= Ataque: Attack
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Atacar ◆ >|
+4+a|[small underline red-background]#*+Ataque ⚔️+*#
 
-Cuando una criatura trata de dañar a otra, ya sea con un golpe o cualquier otro tipo de acción.
+4+a|Atacas con un arma que empuñas o desarmado, apuntando a una criatura a tu alcance (para un ataque cuerpo a cuerpo) o dentro de tu rango (para un ataque a distancia). Haz un rolado correspondiente al ataque que estas utilizando, y compáralo con la #protección# de la criatura objetivo para determinar el resultado. Si ya has realizado cualquier acción con el rasgo _Ataque_ en tu mismo turno, sufres la penalidad por ataques consecutivos correspondiente.
+^a|[big]#✅# +
+[small green-background]#*Infliges el doble de daño.*#
+^a|[big]#🟩# +
+[small green]#Infliges el daño correspondiente al arma utilizada.#
+^a|[big]#🟥# +
+[small red]#Nada.#
+^a|[big]#🆑# +
+[small red-background]#*Recibes 1d4 de daño por algún accidente debido a tu torpeza.*#
+|===

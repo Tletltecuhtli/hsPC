@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Alzar escudo ◆ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Empuñar un escudo.+#
+
+4+a|Antepones el escudo para que te proteja. Obtienes la bonificación para tu #protección# que se indica en la descripción del escudo. Tu escudo permanece alzado hasta el inicio de tu siguiente turno, por lo que la bonificación es persistente pero tus reacciones serán más limitadas.
+|===

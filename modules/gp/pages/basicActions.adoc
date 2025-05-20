@@ -1,0 +1,3 @@
+= Acciones básicas
+
+Representan obras comunes que cualquier criatura es capaz de realizar.

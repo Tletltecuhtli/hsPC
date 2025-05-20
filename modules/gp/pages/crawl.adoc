@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Arrastrarse ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Debes estar _desplomado_ y tener una velocidad de al menos 2m.+#
+
+4+a|Te mueves arrastrandote contra el suelo hasta máximo 1 metro de distancia y sigues _desplomado_.
+|===

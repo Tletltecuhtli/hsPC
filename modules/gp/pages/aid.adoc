@@ -1,0 +1,16 @@
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Apoyar ⤾ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Un aliado esta a punto de realizar una acción que requiera un rolado.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+El aliado esta dispuesto a aceptar tu ayuda y tú te has perparado para apoyarlo.+#
+
+4+a|Tratas de ayudar a tu aliado en su hacer. Para poder usar ésta reacción, primero debes estar preparado para apoyar, normalmente usando la acción _Preparar_ durante tu turno, donde debes explicarle al #contramaestre# exactamente cómo es que pretendes ayudar, él determinará si dicho apoyo es viable y a su vez la #dificultad# del rolado.
+^a|[big]#✅# +
+[small green-background]#*Le proporcionas a tu aliado un bono de _+2_ a su rolado, si eres maestro en la habilidad que checa tu aliado _+3_ y si eres legendario _+4_.*#
+^a|[big]#🟩# +
+[small green]#Le proporcionas a tu aliado un bono de _+1_ a su rolado.#
+^a|[big]#🟥# +
+[small red]#Tu aliado ignora tu apoyo.#
+^a|[big]#🆑# +
+[small red-background]#*Tu aliado sufre una penalidad de _-1_ en su rolado.*#
+|===

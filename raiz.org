@@ -22,6 +22,7 @@ nav:
 #+end_src
 
 * ROOT
+Los nav.adoc son los que le indican a antora la organización del índice, normalmente irían solo con * al principio pero el problema es que como finalmente éste es un archivo ORG, se interpreta como headers y rompe todo el orden, al poner una , antes ,* a la hora de producir el archivo lo escapa, similar a como \ funciona en shell.
 #+begin_src adoc :tangle "modules/ROOT/nav.adoc" :mkdirp yes
 ,* xref:index.adoc[]
 
@@ -106,6 +107,30 @@ A ver que tal sale
 ,*** xref:basicActions.adoc[]
 ,**** xref:attack.adoc[]
 #+end_src
+
+== statblock
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Nombre ◆ >|Nivel
+4+a|[small underline red-background]#*+Rasgos+*#
+>.^a|[small]#*Requisitos*# 3+a|[small]#+Un mínimo de atributos, dotes, competencia, etc. que se deben cumplir para poder emplear esta habilidad. El nivel mencionado de igual manera es un requisito.+#
+>.^a|[small]#*Frecuencia*# 3+a|[small]#+Límite de cada cuando se puede usar la habilidad.+#
+>.^a|[small]#*Desencadenante*# 3+a|[small]#+Las reacciónes y algunas acciones libres tienen desencadenantes que se deben cumplir para poder ser empleadas.+#
+>.^a|[small]#*Ocupa*# 3+a|[small]#+A veces debes poseer ciertos accesorios o estaren alguna circunstancia específica para poder emplear la habilidad.+#
+4+|Aquí se describen los efectos, beneficios o las reglas. Si la regla es una acción, se explica cuál es su efecto o cuánto debes rolar. Si es un dote que modifica una acción existente o brinda un efecto persistente, los beneficios se explican aquí.
+4+|**Especial** Cualquier cualidad especial de la regla se explica en esta sección. Normalmente ésta sección aparece en dotes que puedes elegir más de una, explicando lo que sucede si lo haces.
+A veces una habilidad brindará múltiples acciones o una acción adicional a otros beneficios. Están condensadas en un formato corto usando las mísmas categorías. +
+**Nombre de la acción ◆** (Rasgos) **Frecuencia** que tan seguido se puede usar; **Desencadenante** cuando se puede emplear la reacción o acción libre; **Ocupa** algunas acciones necesitan circunstancias específicas enlistadas aquí; **Efecto** explica cómo la habilidad cambia al mundo.
+^a|[big]#✅# +
+[small green-background]#*Efectos cuando el rolado es un éxito crítico*#
+^a|[big]#🟩# +
+[small green]#Efectos cuando el rolado es un éxito#
+^a|[big]#🟥# +
+[small red]#Efectos cuando el rolado es un fallo#
+^a|[big]#🆑# +
+[small red-background]#*Efectos cuando el rolado es un fallo crítico*#
+|===
+
 ** Acciones
 #+begin_src adoc :tangle "modules/gp/pages/actions.adoc" :mkdirp yes
 = Acciones
@@ -138,27 +163,135 @@ Se pueden usar acciones con desencadenantes solo en respuesta a ciertos eventos 
 Los desencadenantes listados en la descripción de una acción limitan cuándo puedes usar estos. Pero solo puedes usar *UNA* acción en respuesta a un determinado desencadenante. Por ejemplo, si tuvieras dos reacciones que como desencadenante menciona al inicio de tu turno puedes usar cualquiera de ellas, pero no ambas. Esta limitación esta basada en una por criatura no por desencadenante, es decir, múltiples criaturas pueden reaccionar a un mismo desencadenante.
 #+end_src
 *** Acciones básicas
-#+begin_src adoc :tangle "modules/gp/pages/basicActions.ador" :mkdirp yes
+#+begin_src adoc :tangle "modules/gp/pages/basicActions.adoc" :mkdirp yes
 = Acciones básicas
 
 Representan obras comunes que cualquier criatura es capaz de realizar.
-
-.Acciones básicas
- Apoyar ⤾
- Arrastrarse ◆
- Atacar ◆
- Buscar ◆
- Indagar intenciones ◆
- Interactuar ◆
- Liberarse ◆
- Paso con cautela ◆
- Posponer ◇
 #+end_src
-**** Ataque
-#+begin_src adoc :tangle "modules/gp/pages/attack.adoc" :mkdirp yes
-= Ataque: Attack
+**** Agarrarse
+#+begin_src adoc :tangle "modules/gp/pages/grabAnEdge.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Agarrarse ⤾ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Caes de un borde o pasas a lado de uno mientras caes.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+No tienes las manos atadas ni estás neutralizado de alguna otra forma.+#
 
-Cuando una criatura trata de dañar a otra, ya sea con un golpe o cualquier otro tipo de acción.
+4+a|Cuando caes de un borde o bien pasas a lado de uno mientras caes, puedes intentar [underline]#*Agarrarte*# para potencialmente detener tu caída. Debes tener éxito en un rolado de _Reflejos_. Si te agarras del borde, puedes después _Trepar_ utilizando _Atletismo_
+^a|[big]#✅# +
+[small green-background]#*Te agarras del borde, tengas o no una mano libre. Sigues sufriendo daño debido a la distancia caída hasta ese momento, pero tratas la caída como si fuera 6m menor.*#
+^a|[big]#🟩# +
+[small green]#Si tienes por lo menos una mano libre, te agarras del borde deteniendo tu caída. Si no tienes ninguna mano libre, continúas cayendo como si hubieras fallado.#
+^a|[big]#🟥# +
+[small red]#Sigues cayendo.#
+^a|[big]#🆑# +
+[small red-background]#*Te lastimas al tratar de agarrarte. Además del daño total por la distancia caída, le sumas 1d6 de daño _Contundente_*#
+|===
+#+end_src
+**** Alzar escudo
+#+begin_src adoc :tangle "modules/gp/pages/raiseAShield.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Alzar escudo ◆ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Empuñar un escudo.+#
+
+4+a|Antepones el escudo para que te proteja. Obtienes la bonificación para tu #protección# que se indica en la descripción del escudo. Tu escudo permanece alzado hasta el inicio de tu siguiente turno, por lo que la bonificación es persistente pero tus reacciones serán más limitadas.
+|===
+#+end_src
+**** Apoyar
+#+begin_src adoc :tangle "modules/gp/pages/aid.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Apoyar ⤾ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Un aliado esta a punto de realizar una acción que requiera un rolado.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+El aliado esta dispuesto a aceptar tu ayuda y tú te has perparado para apoyarlo.+#
+
+4+a|Tratas de ayudar a tu aliado en su hacer. Para poder usar ésta reacción, primero debes estar preparado para apoyar, normalmente usando la acción _Preparar_ durante tu turno, donde debes explicarle al #contramaestre# exactamente cómo es que pretendes ayudar, él determinará si dicho apoyo es viable y a su vez la #dificultad# del rolado.
+^a|[big]#✅# +
+[small green-background]#*Le proporcionas a tu aliado un bono de _+2_ a su rolado, si eres maestro en la habilidad que checa tu aliado _+3_ y si eres legendario _+4_.*#
+^a|[big]#🟩# +
+[small green]#Le proporcionas a tu aliado un bono de _+1_ a su rolado.#
+^a|[big]#🟥# +
+[small red]#Tu aliado ignora tu apoyo.#
+^a|[big]#🆑# +
+[small red-background]#*Tu aliado sufre una penalidad de _-1_ en su rolado.*#
+|===
+#+end_src
+**** Arrastrarse
+#+begin_src adoc :tangle "modules/gp/pages/crawl.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Arrastrarse ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Debes estar _desplomado_ y tener una velocidad de al menos 2m.+#
+
+4+a|Te mueves arrastrandote contra el suelo hasta máximo 1 metro de distancia y sigues _desplomado_.
+|===
+#+end_src
+**** Atacar
+#+begin_src adoc :tangle "modules/gp/pages/attack.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Atacar ◆ >|
+4+a|[small underline red-background]#*+Ataque ⚔️+*#
+
+4+a|Atacas con un arma que empuñas o desarmado, apuntando a una criatura a tu alcance (para un ataque cuerpo a cuerpo) o dentro de tu rango (para un ataque a distancia). Haz un rolado correspondiente al ataque que estas utilizando, y compáralo con la #protección# de la criatura objetivo para determinar el resultado. Si ya has realizado cualquier acción con el rasgo _Ataque_ en tu mismo turno, sufres la penalidad por ataques consecutivos correspondiente.
+^a|[big]#✅# +
+[small green-background]#*Infliges el doble de daño.*#
+^a|[big]#🟩# +
+[small green]#Infliges el daño correspondiente al arma utilizada.#
+^a|[big]#🟥# +
+[small red]#Nada.#
+^a|[big]#🆑# +
+[small red-background]#*Recibes 1d4 de daño por algún accidente debido a tu torpeza.*#
+|===
+#+end_src
+**** Buscar
+#+begin_src adoc :tangle "modules/gp/pages/seek.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Buscar ◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️️+*#
+
+4+a|Puedes examinar un área en busqueda de signos de criaturas u objetos. Podrías sufrir un penalizador si eligieras un área muy grande o que estuviera lejos. El #contramaestre# puede determinar si necesitas _Buscar_ como una actividad, lo que requiere más acciones o incluso minutos u horas si buscas en una zona particularmente atestada. Si buscas criaturas, haz un rolado de persepción y el #contramaestre# comparará el resultado con el _Sigilo_ de cualquier criatura no detectada o escondida en la zona; de igual manera la #dificultad# para detectar objetos. Una criatura a la que detectas podría permanecer escondida, en lugar de volverse observada si estás utilizando un sentido impreciso o si algún efecto (como por ejemplo la invisibilidad) evita que el sujeto sea observado.
+2+^a|[big]#✅# +
+[small green-background]#*Si estás buscando criaturas, cualquier criatura no detectada o escondida pasa a ser observada por ti. Si estabas buscando un objeto, averiguas su ubicación.*#
+2+^a|[big]#🟩# +
+[small green]#Si estabas buscando criaturas, cualquier criatura no detectada pasa a estar escondida de ti en lugar de no detectada, y cualquier criatura escondida pasa a ser observada por ti. Si estabas buscando un objeto obtienes una clara pista sobre su paradero.#
+|===
+
+#+end_src
+**** Cautelar
+#+begin_src adoc :tangle "modules/gp/pages/step.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Cautelar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener una velocidad de al menos 2m.+#
+
+4+a|Te mueves cuidadosamente máximo 1m. A diferencia de otros tipos de movimiento, dar un paso con cautela no desencadena reacciones, como por ejemplo ataques oportunos que son desencadenados por acciones de movimiento. Tambien proporciona una bonificación por situación al sufrir la activación de trampas. No puedes dar un paso cauteloso en terreno difícil.
+|===
+#+end_src
+**** Cubrirse
+#+begin_src adoc :tangle "modules/gp/pages/takeCover.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Cubrirse ◆ >|
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Te estas beneficiando de cobertura, posees un rasgo que te permita ponerte a cubierto o estás _desplomado_+#
+
+4+a|Te arrimas a una pared o te agachas tras un obstáculo para sacar partido de la _cobertura_. Si tendrías cobertura normal, en su lugar obtienes cobertura mayor, que proporciona un bonificador +4 por circunstancia a tu #protección#, a los rolados de salvación de _Reflejos_ contra efectos de área y a las pruebas de _Sigilo_ para evitar tu detección. Si tendrías cobertura menor, en su lugar obtienes los beneficios de una cobertura normal, es decir un bonificador de +2 por circunstancia. Esto dura hasta que te mueves de tu espacio actual, usas alguna acción de ataque, quedas inconciente o voluntariamente acabas con este efecto como acción libre.
+|===
+#+end_src
+**** Desviar la mirada
+#+begin_src adoc :tancle "modules/gp/pages/avertGaze.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Desviar la mirada ◆ >|
+
+4+a|Desvias la mirada del peligro. Obtienes un bonificador +2 por circunstancia a los rolados de salvación contra acciones que tengan rasgo visual. Sin embargo, al mismo tiempo pierdes de vista el objetivo por lo que tienes una penalidad de -1 en todos los ataques contra éste y en tu protección ante dicho objetivo. Tu mirada permanece desviada hasta el inicio de tu próximo turno.
+|===
+
 #+end_src
 * Personaje
 #+begin_src adoc :tangle "modules/char/nav.adoc" :mkdirp yes
