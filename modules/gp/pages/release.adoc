@@ -1,0 +1,7 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Soltar ◇ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+
+4+a|Sueltas algo que sostienes en una o ambas manos. Ésto podría significar dejar caer un objeto, quitar una mano de tu arma pero continuar empuñandola con la otra, liberar una cuerda que sostienes o llevar a cabo una acción similar. _Soltar_ no provoca desencadenantes de reacciones que pudieran ser desencadenadas con el rasgo manipular.
+|===

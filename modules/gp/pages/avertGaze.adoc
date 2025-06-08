@@ -1,0 +1,6 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Desviar la mirada ◆ >|
+
+4+a|Desvias la mirada del peligro. Obtienes un bonificador +2 por circunstancia a los rolados de salvación contra acciones que tengan rasgo visual. Sin embargo, al mismo tiempo pierdes de vista el objetivo por lo que tienes una penalidad de -1 en todos los ataques contra éste y en tu protección ante dicho objetivo. Tu mirada permanece desviada hasta el inicio de tu próximo turno.
+|===

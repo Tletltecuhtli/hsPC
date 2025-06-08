@@ -1,0 +1,7 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Posponer ◇ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Inicia tu turno.+#
+
+4+a|Esperas al momento preciso para actuar. El resto de tu turno aún no tiene lugar. En vez de ello, se te retira del orden de iniciativa. Puedes volver al mismo como acción libre desencadenada al final del turno de cualquier otra criatura. Esto cambia permanentemente tu iniciativa a la nueva posición. No puedes utilizar reacciones mientras estes fuera del orden de inicaitiva hasta volver a ésta. Si _Pospones_ una ronda completa sin volver al orden de iniciativa, tus acciones del turno _Pospuesto_ se pierden, tu iniciativa no cambia y tu siguiente turno tiene lugar en su posición original del orden de iniciativa. Cuando _Pospones_, cualquier daño persistente u otros efectos negativos que suelen ocurrir al inicio o al final de tu turno ocurren de inmediato al utilizar la acción _Posponer_. Cualquier efecto beneficioso que terminaría en algún momento de tu turno también acaba. En resumen, no puedes _Posponer_ para evitar consecuencias negativas que tendrían lugar en tu turno, ni prolongar efectos beneficiosos que acabarían en tu turno.
+|===

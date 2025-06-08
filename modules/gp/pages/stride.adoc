@@ -1,0 +1,7 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Zancada ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+
+4+a|Te mueves hasta máximo tu _Velocidad_ en tierra.
+|===

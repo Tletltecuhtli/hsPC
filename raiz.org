@@ -284,14 +284,123 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 |===
 #+end_src
 **** Desviar la mirada
-#+begin_src adoc :tancle "modules/gp/pages/avertGaze.adoc" :mkdirp yes
+#+begin_src adoc :tangle "modules/gp/pages/avertGaze.adoc" :mkdirp yes
 [options='header',frame='none',grid='rows',width='85%',role='center']
 |===
 3+|Desviar la mirada ◆ >|
 
 4+a|Desvias la mirada del peligro. Obtienes un bonificador +2 por circunstancia a los rolados de salvación contra acciones que tengan rasgo visual. Sin embargo, al mismo tiempo pierdes de vista el objetivo por lo que tienes una penalidad de -1 en todos los ataques contra éste y en tu protección ante dicho objetivo. Tu mirada permanece desviada hasta el inicio de tu próximo turno.
 |===
+#+end_src
+**** Indagar intenciones
+#+begin_src adoc :tangle "modules/gp/pages/senseMotive.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Indagar intenciones ◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️+*#
 
+4+a|Intentas determianr si el comportamiento de una criatura es anormal. Elige una criatura y evalúa si su lenguaje corporal es extraño, si presenta signos de nerviosismo u otros indicadores de que podría estar intentando engañar a alguien. Haz un rolado de _Percepción_ que el #contramaestre# va a comparar contra una #dificultad# de _Engaño_ apropiada. Generalmente no puedes volver a intentar _Indagar intenciones_ a la misma criatura hasta que la situación cambie significativamente.
+^a|[big]#✅# +
+[small green-background]#*Determinas las verdaderas intenciones de la criatura y obtienes una idea clara de cualquier magia mental que la esté afectando.*#
+^a|[big]#🟩# +
+[small green]#Puedes decir si la criatura está comportándose con normalidado no, pero no conoces sus intenciones exactas o qué tipo de magia puede estar afectándola.#
+^a|[big]#🟥# +
+[small red]#Caes en el engaño que la criatura quiere que creas. Si no está siendo engañosa, crees que se comporta con normalidad.#
+^a|[big]#🆑# +
+[small red-background]#*Obtienes una percepción falsa de las intenciones de la criatura.*#
+|===
+#+end_src
+**** Interactuar
+#+begin_src adoc :tangle "modules/gp/pages/interact.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Interactuar ◆ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+
+4+a|Pretendes manipular un objeto o el terreno mismo. Puedes hacerte con un objeto desatendido o almacenado, abrir una puerta o llevar a cabo algún efecto similar. Podrías llegar a necesitar una prueba de habilidad para determinar si tu acción de _Interactuar_ tiene éxito.
+|===
+#+end_src
+**** Levantarse
+#+begin_src adoc :tangle "modules/gp/pages/stand.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Levantarse ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Debes estar _desplomado_.+#
+
+4+a|Te pones de pie.
+|===
+#+end_src
+**** Liberarse
+#+begin_src adoc :tangle "modules/gp/pages/escape.adoc" :mkdirp yes
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Liberarse ◆ >|
+4+a|[small underline red-background]#*+Ataque ⚔️+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Sufrir la condición _grabbed_, _inmovilized_ o _restrained_.+#
+
+4+a|Intentas liberarte de la condición que te aflige. Elige la criatura, objeto, efecto, peligro u otro impedimento que te impone cualquiera de estos estados. Haz un rolado de #ataque# desarmado contra la #dificultad# del efecto. Si lo prefieres, puedes hacer un rolado de Acrobacias o de Atletismo en lugar de utilizar tu modificador de ataque (pero la acción sigue teniendo el rasgo ataque).
+^a|[big]#✅# +
+[small green-background]#*Quedas libre. Inmediatamente puedes, como acción libre, dar una Zancada de hasta 1m.*#
+^a|[big]#🟩# +
+[small green]#Quedas libre.#
+^a|[big]#🟥# +
+[small red]#Sigues atrapado.#
+^a|[big]#🆑# +
+[small red-background]#*No te liberas. Y no puedes volver a intentar liberarte hasta tu próximo turno.*#
+|===
+#+end_src
+**** Posponer
+#+begin_src adoc :tangle "modules/gp/pages/delay.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Posponer ◇ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Inicia tu turno.+#
+
+4+a|Esperas al momento preciso para actuar. El resto de tu turno aún no tiene lugar. En vez de ello, se te retira del orden de iniciativa. Puedes volver al mismo como acción libre desencadenada al final del turno de cualquier otra criatura. Esto cambia permanentemente tu iniciativa a la nueva posición. No puedes utilizar reacciones mientras estes fuera del orden de inicaitiva hasta volver a ésta. Si _Pospones_ una ronda completa sin volver al orden de iniciativa, tus acciones del turno _Pospuesto_ se pierden, tu iniciativa no cambia y tu siguiente turno tiene lugar en su posición original del orden de iniciativa. Cuando _Pospones_, cualquier daño persistente u otros efectos negativos que suelen ocurrir al inicio o al final de tu turno ocurren de inmediato al utilizar la acción _Posponer_. Cualquier efecto beneficioso que terminaría en algún momento de tu turno también acaba. En resumen, no puedes _Posponer_ para evitar consecuencias negativas que tendrían lugar en tu turno, ni prolongar efectos beneficiosos que acabarían en tu turno.
+|===
+#+end_src
+**** Preparar
+#+begin_src adoc :tangle "modules/gp/pages/ready.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Preparar ◆, ◆◆ o ◆◆◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️+*#
+
+4+a|Te preparas para usar una acción que tendrá lugar fuera de tu turno, para lo cual debes designar un desencadenante. Si usas _Preparar_ como acción sencilla, solo puedes elegir alguna acción libre; si usas _Preparar_ como actividad de doble acción, puedes elegir alguna acción sencilla; si usas _Preparar_ como actividad de triple acción, puedes elegir alguna actividad de doble acción. A continuación acaba tu turno. Si el desencadenante que has designado tiene lugar antes del inicio de tu siguiente turno, puedes utilizar la acción elegida como reacción, siempre y cuando sigas cumpliendo los requisitos.+
+Si tu acción preparada es un ataque, sufres el penalizador por ataques múltiples que tenías al momento de _Preparar_.
+|===
+#+end_src
+**** Saltar
+#+begin_src adoc :tangle "modules/gp/pages/leap.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Saltar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+
+4+a|Das un salto corto y sencillo, no requere ningún rolado. Al _Saltar_ formas un arco donde puedes moverte horizontalmente hasta máximo la mitad de tu _Velocidad_ en tierra, redondeada hacia arriba; mientras que verticalmente lo máximo que te puedes elevar es la mitad de tu _Altura_, igualmente redondeada hacia arriba.+
+Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su rolado pertinente.
+|===
+#+end_src
+**** Soltar
+#+begin_src adoc :tangle "modules/gp/pages/release.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Soltar ◇ >|
+4+a|[small underline red-background]#*+Manipular 🤌+*#
+
+4+a|Sueltas algo que sostienes en una o ambas manos. Ésto podría significar dejar caer un objeto, quitar una mano de tu arma pero continuar empuñandola con la otra, liberar una cuerda que sostienes o llevar a cabo una acción similar. _Soltar_ no provoca desencadenantes de reacciones que pudieran ser desencadenadas con el rasgo manipular.
+|===
+#+end_src
+**** Zancada
+#+begin_src adoc :tangle "modules/gp/pages/stride.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Zancada ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+
+4+a|Te mueves hasta máximo tu _Velocidad_ en tierra.
+|===
 #+end_src
 * Personaje
 #+begin_src adoc :tangle "modules/char/nav.adoc" :mkdirp yes
@@ -307,7 +416,7 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 == Héroe: Player Character (PC)
 Éste es un personaje creado y controlado por el jugador.
 
-== Personaje no jugable: Nonplayer CHaracter (NPC)
+== Personaje no jugable: NonPlayable Character (NPC)
 #+end_src
 *** Ascendencia
 #+begin_src adoc :tangle "modules/char/pages/ancestry.adoc" :mkdirp yes

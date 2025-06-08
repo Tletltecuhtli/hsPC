@@ -1,0 +1,16 @@
+[options='header,footer',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Liberarse ◆ >|
+4+a|[small underline red-background]#*+Ataque ⚔️+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Sufrir la condición _grabbed_, _inmovilized_ o _restrained_.+#
+
+4+a|Intentas liberarte de la condición que te aflige. Elige la criatura, objeto, efecto, peligro u otro impedimento que te impone cualquiera de estos estados. Haz un rolado de #ataque# desarmado contra la #dificultad# del efecto. Si lo prefieres, puedes hacer un rolado de Acrobacias o de Atletismo en lugar de utilizar tu modificador de ataque (pero la acción sigue teniendo el rasgo ataque).
+^a|[big]#✅# +
+[small green-background]#*Quedas libre. Inmediatamente puedes, como acción libre, dar una Zancada de hasta 1m.*#
+^a|[big]#🟩# +
+[small green]#Quedas libre.#
+^a|[big]#🟥# +
+[small red]#Sigues atrapado.#
+^a|[big]#🆑# +
+[small red-background]#*No te liberas. Y no puedes volver a intentar liberarte hasta tu próximo turno.*#
+|===

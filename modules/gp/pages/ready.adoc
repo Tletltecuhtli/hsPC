@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Preparar ◆, ◆◆ o ◆◆◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️+*#
+
+4+a|Te preparas para usar una acción que tendrá lugar fuera de tu turno, para lo cual debes designar un desencadenante. Si usas _Preparar_ como acción sencilla, solo puedes elegir alguna acción libre; si usas _Preparar_ como actividad de doble acción, puedes elegir alguna acción sencilla; si usas _Preparar_ como actividad de triple acción, puedes elegir alguna actividad de doble acción. A continuación acaba tu turno. Si el desencadenante que has designado tiene lugar antes del inicio de tu siguiente turno, puedes utilizar la acción elegida como reacción, siempre y cuando sigas cumpliendo los requisitos.+
+Si tu acción preparada es un ataque, sufres el penalizador por ataques múltiples que tenías al momento de _Preparar_.
+|===
