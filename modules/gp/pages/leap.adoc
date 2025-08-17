@@ -3,6 +3,6 @@
 3+|Saltar ◆ >|
 4+a|[small underline red-background]#*+Movimiento 🏃+*#
 
-4+a|Das un salto corto y sencillo, no requere ningún rolado. Al _Saltar_ formas un arco donde puedes moverte horizontalmente hasta máximo la mitad de tu _Velocidad_ en tierra, redondeada hacia arriba; mientras que verticalmente lo máximo que te puedes elevar es la mitad de tu _Altura_, igualmente redondeada hacia arriba.+
+4+a|Das un salto corto y sencillo, no requere ningún rolado. Al _Saltar_ formas un arco donde puedes moverte horizontalmente hasta máximo la mitad de tu _Velocidad_ en tierra, redondeada hacia arriba; mientras que verticalmente lo máximo que te puedes elevar es la mitad de tu _Altura_, igualmente redondeada hacia arriba. +
 Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su rolado pertinente.
 |===

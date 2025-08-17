@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Volar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de vuelo.+#
+
+4+a|Te mueves por el aire a un ritmo máximo de tu velocidad de vuelo. Moverte hacia arriba (ya sea vertical o diagonalmente) utiliza las reglas de movimiento a traveś de terreno difícil. Al descender puedes desplazarte 2m por cada metro de movimiento que gastas, hasta llegar al suelo dónde no sufres daño por caída. Puedes usar la acción _volar_ y no desplazarte para mantenerte flotando en el mismo sitio. Si al final de tu turno sigues en el aire y no has utilizado la acción _Volar_ en dicho turno, caes libremente lo que sí conlleva daño por caída.
+|===

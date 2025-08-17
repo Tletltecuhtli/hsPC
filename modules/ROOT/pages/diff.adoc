@@ -1,0 +1,9 @@
+= Diferencias
+
+Las principales diferencias que tiene *Hallasenderos* con Pathfinder 2e son:
+
+* Traducido al ESPAÑOL. La versión oficial remasterizada aún no es traducida, y de todas maneras aunque Paizo terminé publicando una estaría en Castellano ¡Jolines!. Por eso mejor lo traducimos nosotros.
+* Amo los hexágonos por tanto el juego esta adaptado a una mentalidad hexagonal.
+* Unidades Internacionales de Medidas... como el juego es gringo usualmente todo se mide en pies y la medida mínima eran 5 pies, que en conversión real se aproximaría a 1.5m pero para no andar haciendo cálculos bizarros y simplificar las cosas se convierte 5ft=1m y así vamos de metro en metro.
+* A la mayoría de acciones le agregue más consecuencias cuando tiras un fallo crítico.
+* Rebalance en algunas situaciones en las cuales no estoy de acuerdo como se manejan originalmente, por ejemplo, el uso del escudo.

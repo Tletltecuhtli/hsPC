@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Señalar ◆ >|
+4+a|[small underline red-background]#*+Auditiva 👂+*# [small underline red-background]#*+Manipular 🤌+*# [small underline red-background]#*+Visual 👀+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Una criatura no ha sido detectada por alguno de tus aliados, pero sí por tí.+#
+
+4+a|Indicas a uno o más aliados dónde está una criatura a la que puedes ver, haciendo gestos en una dirección y describiendo verbalmente la distancia. Dicha criatura pasa a estar *escondida* para tus aliados, en lugar de *no detectada*. Ésto solo funciona para aliados que pueden verte y que estan en una posición en la que podrían potencialmente detectar al objetivo. Si tus aliados no pueden oirte o entenderte, deben tener éxito en un rolado de Percepción contra el _Sigilo_ de la criatura o te entenderán mal y creeran que la criatura esta en un lugar diferente.
+|===

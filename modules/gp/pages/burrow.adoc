@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Excavar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de excavación.+#
+
+4+a|Excavas a través de grava, arena o algún material igualmente suelto hasta tu velocidad de excavación. No puedes excavar a través de rocas ni materiales más densos que grava a menos que tengas una habilidad que te permita hacerlo.
+|===

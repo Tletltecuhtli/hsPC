@@ -1,0 +1,8 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Detener caída ⤾ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Te caes.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de vuelo.+#
+
+4+a|Haces un rolado de Acrobacias para retener tu caída. Si tienes éxito caes suavemente sin sufrir daño alguno por la caída.
+|===

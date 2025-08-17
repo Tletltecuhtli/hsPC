@@ -1,0 +1,7 @@
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Desechar ◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️+*#
+
+4+a|Das por terminado el efecto de un hechizo o algún elemento magico. Éste debe ser un efecto que explícitamente indique que puede ser desechado.
+|===

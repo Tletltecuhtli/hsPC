@@ -33,6 +33,7 @@ Los nav.adoc son los que le indican a antora la organización del índice, norma
 ,** xref:armorClass.adoc[]
 #+end_src
 Aquí inicia con una leve introducción a lo que es un juego de rol y los objetivos del juego
+
 ** Introducción
 #+BEGIN_SRC adoc :tangle "modules/ROOT/pages/index.adoc" :mkdirp yes
 = Introducción
@@ -69,7 +70,34 @@ Aprender sobre la marcha, que la cantidad de información no te abruma, solo nec
 #+END_SRC
 
 queda ver como será posible linkear a otros capítulos, de momento estan marcados entre #así# pero pues no sé si sea más viable más adelante
-** Contramaestre
+
+** Principales diferencias con el original
+#+begin_src adoc :tangle "modules/ROOT/pages/diff.adoc" :mkdirp yes
+= Diferencias
+
+Las principales diferencias que tiene *Hallasenderos* con Pathfinder 2e son:
+
+,* Traducido al ESPAÑOL. La versión oficial remasterizada aún no es traducida, y de todas maneras aunque Paizo terminé publicando una estaría en Castellano ¡Jolines!. Por eso mejor lo traducimos nosotros.
+,* Amo los hexágonos por tanto el juego esta adaptado a una mentalidad hexagonal.
+,* Unidades Internacionales de Medidas... como el juego es gringo usualmente todo se mide en pies y la medida mínima eran 5 pies, que en conversión real se aproximaría a 1.5m pero para no andar haciendo cálculos bizarros y simplificar las cosas se convierte 5ft=1m y así vamos de metro en metro.
+,* A la mayoría de acciones le agregue más consecuencias cuando tiras un fallo crítico.
+,* Rebalance en algunas situaciones en las cuales no estoy de acuerdo como se manejan originalmente, por ejemplo, el uso del escudo.
+#+end_src
+
+** Juego de rol
+#+begin_src adoc :tangle "modules/ROOT/pages/rpg.adoc" :mkdirp yes
+= Juego de rol
+
+Role-Playing Game (RPG) -> Juego de rol.
+
+== ¿Qué es un juego de rol?
+Es una actividad que combina creatividad, estrategia e interacción para forjar y explorar una historia juntos.
+
+== Terminos comunes
+La mayor parte de los juegos de rol usan terminos y frases que son comunes para los que ya tienen experiencia con estos, pero extraños para los novatos. Por eso vamos a describir algunos de ellos para que todos estemos en la misma página.
+#+end_src
+
+*** Contramaestre
 #+begin_src adoc :tangle "modules/ROOT/pages/gameMaster.adoc" :mkdirp yes
 = Contramaestre
 
@@ -78,7 +106,16 @@ Gamemaster (GM) -> Maestro del Juego, [.underline]#Contramaestre#, Director del 
 == ¿Qué es un contramaestre?
 En todo juego de rol se necesita un voluntario que es quien se encargaga de contar la historia y mantener control de los personajes extra del mundo tanto monstruos como pueblerinos y nobeza todo lo controla el contramaestre. Hay reglas especificas que debe respetar pero de momento no vamos a preocuparnos por nada de eso porque aquí solo vamos a centrarnos del lado opuesto que son personajes jugables
 #+end_src
-** Atributos
+
+*** Puntos de vida
+#+begin_src adoc :tangle "modules/ROOT/pages/healthPoints.adoc" :mkdirp yes
+= Puntos de vida
+
+Health Points (HP) -> Puntos de vida.
+
+Es la representación de la salud de todo ser vivo en el juego.
+#+end_src
+*** Atributos
 #+begin_src adoc :tangle "modules/ROOT/pages/attributes.adoc" :mkdirp yes
 = Atributos: Attribute
 Toda criatura tiene seis atributos que lo caracterizan, estos son:
@@ -93,7 +130,7 @@ Toda criatura tiene seis atributos que lo caracterizan, estos son:
 [note]
 En la versión _remasterizada_ de Pathfinder se desecharón los valores del 1 al 20 en los atributos, dejando únicamente los modificadores; siendo *0* el valor por defecto y de ahí partiendo a +1, +2, -1, etc.
 #+end_src
-** Armor Class
+*** Armor Class
 #+begin_src adoc :tangle "modules/ROOT/pages/armorClass.adoc" :mkdirp yes
 = Nivel de armadura: Armor Class (AC)
 
@@ -131,6 +168,10 @@ A veces una habilidad brindará múltiples acciones o una acción adicional a ot
 [small red-background]#*Efectos cuando el rolado es un fallo crítico*#
 |===
 
+** Modos de juego
+** Rolado
+** Daño
+** Condiciones
 ** Acciones
 #+begin_src adoc :tangle "modules/gp/pages/actions.adoc" :mkdirp yes
 = Acciones
@@ -166,7 +207,7 @@ Los desencadenantes listados en la descripción de una acción limitan cuándo p
 #+begin_src adoc :tangle "modules/gp/pages/basicActions.adoc" :mkdirp yes
 = Acciones básicas
 
-Representan obras comunes que cualquier criatura es capaz de realizar.
+Representan obras comunes que cualquier criatura es capaz de realizar, sin embargo hay algunas que requieren circunstancias específicas o que cuentes con alguna condición especial para poder ser llevadas a cabo.
 #+end_src
 **** Agarrarse
 #+begin_src adoc :tangle "modules/gp/pages/grabAnEdge.adoc" :mkdirp yes
@@ -283,6 +324,26 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 4+a|Te arrimas a una pared o te agachas tras un obstáculo para sacar partido de la _cobertura_. Si tendrías cobertura normal, en su lugar obtienes cobertura mayor, que proporciona un bonificador +4 por circunstancia a tu #protección#, a los rolados de salvación de _Reflejos_ contra efectos de área y a las pruebas de _Sigilo_ para evitar tu detección. Si tendrías cobertura menor, en su lugar obtienes los beneficios de una cobertura normal, es decir un bonificador de +2 por circunstancia. Esto dura hasta que te mueves de tu espacio actual, usas alguna acción de ataque, quedas inconciente o voluntariamente acabas con este efecto como acción libre.
 |===
 #+end_src
+**** Desechar
+#+begin_src adoc :tangle "modules/gp/pages/dismiss.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Desechar ◆ >|
+4+a|[small underline red-background]#*+Concentración ⚠️+*#
+
+4+a|Das por terminado el efecto de un hechizo o algún elemento magico. Éste debe ser un efecto que explícitamente indique que puede ser desechado.
+|===
+#+end_src
+**** Desplomarse
+#+begin_src adoc :tangle "modules/gp/pages/dropProne.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Desplomarse ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+
+4+a|Te dejas caer al suelo. Pasas a estar _Desplomado_.
+|===
+#+end_src
 **** Desviar la mirada
 #+begin_src adoc :tangle "modules/gp/pages/avertGaze.adoc" :mkdirp yes
 [options='header',frame='none',grid='rows',width='85%',role='center']
@@ -290,6 +351,28 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 3+|Desviar la mirada ◆ >|
 
 4+a|Desvias la mirada del peligro. Obtienes un bonificador +2 por circunstancia a los rolados de salvación contra acciones que tengan rasgo visual. Sin embargo, al mismo tiempo pierdes de vista el objetivo por lo que tienes una penalidad de -1 en todos los ataques contra éste y en tu protección ante dicho objetivo. Tu mirada permanece desviada hasta el inicio de tu próximo turno.
+|===
+#+end_src
+**** Detener caída
+#+begin_src adoc :tangle "modules/gp/pages/arrestAFall.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Detener caída ⤾ >|
+>.^a|[small]#*Desencadenante ⛓*# 3+a|[small]#+Te caes.+#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de vuelo.+#
+
+4+a|Haces un rolado de Acrobacias para retener tu caída. Si tienes éxito caes suavemente sin sufrir daño alguno por la caída.
+|===
+#+end_src
+**** Excavar
+#+begin_src adoc :tangle "modules/gp/pages/burrow.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Excavar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de excavación.+#
+
+4+a|Excavas a través de grava, arena o algún material igualmente suelto hasta tu velocidad de excavación. No puedes excavar a través de rocas ni materiales más densos que grava a menos que tengas una habilidad que te permita hacerlo.
 |===
 #+end_src
 **** Indagar intenciones
@@ -350,6 +433,17 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 [small red-background]#*No te liberas. Y no puedes volver a intentar liberarte hasta tu próximo turno.*#
 |===
 #+end_src
+**** Montar
+#+begin_src adoc :tangle "modules/gp/pages/mount.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Montar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Estas adyacente a una criatura que sea al menos una unidad de tamaño más grande que tú y esta dispuesta a ser montada.+#
+
+4+a|Te montas sobre la criatura y la cabalgas. Si ya estas montado, puedes usar esta misma acción para desmontarla, colocandote en una posición adyacente a la criatura.
+|===
+#+end_src
 **** Posponer
 #+begin_src adoc :tangle "modules/gp/pages/delay.adoc" :mkdirp yes
 [options='header',frame='none',grid='rows',width='85%',role='center']
@@ -367,7 +461,7 @@ Representan obras comunes que cualquier criatura es capaz de realizar.
 3+|Preparar ◆, ◆◆ o ◆◆◆ >|
 4+a|[small underline red-background]#*+Concentración ⚠️+*#
 
-4+a|Te preparas para usar una acción que tendrá lugar fuera de tu turno, para lo cual debes designar un desencadenante. Si usas _Preparar_ como acción sencilla, solo puedes elegir alguna acción libre; si usas _Preparar_ como actividad de doble acción, puedes elegir alguna acción sencilla; si usas _Preparar_ como actividad de triple acción, puedes elegir alguna actividad de doble acción. A continuación acaba tu turno. Si el desencadenante que has designado tiene lugar antes del inicio de tu siguiente turno, puedes utilizar la acción elegida como reacción, siempre y cuando sigas cumpliendo los requisitos.+
+4+a|Te preparas para usar una acción que tendrá lugar fuera de tu turno, para lo cual debes designar un desencadenante. Si usas _Preparar_ como acción sencilla, solo puedes elegir alguna acción libre; si usas _Preparar_ como actividad de doble acción, puedes elegir alguna acción sencilla; si usas _Preparar_ como actividad de triple acción, puedes elegir alguna actividad de doble acción. A continuación acaba tu turno. Si el desencadenante que has designado tiene lugar antes del inicio de tu siguiente turno, puedes utilizar la acción elegida como reacción, siempre y cuando sigas cumpliendo los requisitos. +
 Si tu acción preparada es un ataque, sufres el penalizador por ataques múltiples que tenías al momento de _Preparar_.
 |===
 #+end_src
@@ -378,8 +472,19 @@ Si tu acción preparada es un ataque, sufres el penalizador por ataques múltipl
 3+|Saltar ◆ >|
 4+a|[small underline red-background]#*+Movimiento 🏃+*#
 
-4+a|Das un salto corto y sencillo, no requere ningún rolado. Al _Saltar_ formas un arco donde puedes moverte horizontalmente hasta máximo la mitad de tu _Velocidad_ en tierra, redondeada hacia arriba; mientras que verticalmente lo máximo que te puedes elevar es la mitad de tu _Altura_, igualmente redondeada hacia arriba.+
+4+a|Das un salto corto y sencillo, no requere ningún rolado. Al _Saltar_ formas un arco donde puedes moverte horizontalmente hasta máximo la mitad de tu _Velocidad_ en tierra, redondeada hacia arriba; mientras que verticalmente lo máximo que te puedes elevar es la mitad de tu _Altura_, igualmente redondeada hacia arriba. +
 Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su rolado pertinente.
+|===
+#+end_src
+**** Señalar
+#+begin_src adoc :tangle "modules/gp/pages/pointOut.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Señalar ◆ >|
+4+a|[small underline red-background]#*+Auditiva 👂+*# [small underline red-background]#*+Manipular 🤌+*# [small underline red-background]#*+Visual 👀+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Una criatura no ha sido detectada por alguno de tus aliados, pero sí por tí.+#
+
+4+a|Indicas a uno o más aliados dónde está una criatura a la que puedes ver, haciendo gestos en una dirección y describiendo verbalmente la distancia. Dicha criatura pasa a estar *escondida* para tus aliados, en lugar de *no detectada*. Ésto solo funciona para aliados que pueden verte y que estan en una posición en la que podrían potencialmente detectar al objetivo. Si tus aliados no pueden oirte o entenderte, deben tener éxito en un rolado de Percepción contra el _Sigilo_ de la criatura o te entenderán mal y creeran que la criatura esta en un lugar diferente.
 |===
 #+end_src
 **** Soltar
@@ -392,6 +497,17 @@ Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su ro
 4+a|Sueltas algo que sostienes en una o ambas manos. Ésto podría significar dejar caer un objeto, quitar una mano de tu arma pero continuar empuñandola con la otra, liberar una cuerda que sostienes o llevar a cabo una acción similar. _Soltar_ no provoca desencadenantes de reacciones que pudieran ser desencadenadas con el rasgo manipular.
 |===
 #+end_src
+**** Volar
+#+begin_src adoc :tangle "modules/gp/pages/fly.adoc" :mkdirp yes
+[options='header',frame='none',grid='rows',width='85%',role='center']
+|===
+3+|Volar ◆ >|
+4+a|[small underline red-background]#*+Movimiento 🏃+*#
+>.^a|[small]#*Requisitos 🔏*# 3+a|[small]#+Tener velocidad de vuelo.+#
+
+4+a|Te mueves por el aire a un ritmo máximo de tu velocidad de vuelo. Moverte hacia arriba (ya sea vertical o diagonalmente) utiliza las reglas de movimiento a traveś de terreno difícil. Al descender puedes desplazarte 2m por cada metro de movimiento que gastas, hasta llegar al suelo dónde no sufres daño por caída. Puedes usar la acción _volar_ y no desplazarte para mantenerte flotando en el mismo sitio. Si al final de tu turno sigues en el aire y no has utilizado la acción _Volar_ en dicho turno, caes libremente lo que sí conlleva daño por caída.
+|===
+#+end_src
 **** Zancada
 #+begin_src adoc :tangle "modules/gp/pages/stride.adoc" :mkdirp yes
 [options='header',frame='none',grid='rows',width='85%',role='center']
@@ -402,6 +518,8 @@ Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su ro
 4+a|Te mueves hasta máximo tu _Velocidad_ en tierra.
 |===
 #+end_src
+** Movimiento
+** Efectos
 * Personaje
 #+begin_src adoc :tangle "modules/char/nav.adoc" :mkdirp yes
 ,* xref:character.adoc[]
@@ -418,6 +536,9 @@ Saltar una distancia mayor requiere el uso de la habilidad _Atletismo_ con su ro
 
 == Personaje no jugable: NonPlayable Character (NPC)
 #+end_src
+
+Skills -> Aptitudes
+
 *** Ascendencia
 #+begin_src adoc :tangle "modules/char/pages/ancestry.adoc" :mkdirp yes
 = Ascendencia: Ancestry _porque decir *raza* es racista_

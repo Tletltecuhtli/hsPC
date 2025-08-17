@@ -1,0 +1,5 @@
+= Puntos de vida
+
+Health Points (HP) -> Puntos de vida.
+
+Es la representación de la salud de todo ser vivo en el juego.

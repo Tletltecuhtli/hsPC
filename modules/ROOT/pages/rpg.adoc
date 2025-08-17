@@ -1,0 +1,9 @@
+= Juego de rol
+
+Role-Playing Game (RPG) -> Juego de rol.
+
+== ¿Qué es un juego de rol?
+Es una actividad que combina creatividad, estrategia e interacción para forjar y explorar una historia juntos.
+
+== Terminos comunes
+La mayor parte de los juegos de rol usan terminos y frases que son comunes para los que ya tienen experiencia con estos, pero extraños para los novatos. Por eso vamos a describir algunos de ellos para que todos estemos en la misma página.
